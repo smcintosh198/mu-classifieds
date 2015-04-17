@@ -4,8 +4,8 @@
     <string name="app_name">MuClassifieds</string>
     <string name="mu_abbreviation">MU</string>
     <string name="classifieds">Classifieds</string>
-    <string name="Username">(u).</string>
-    <string name="Password">(p).</string>
+    <string name="username">(u).</string>
+    <string name="password">(p).</string>
     <string name="action_settings">Settings</string>
 
 </resources>

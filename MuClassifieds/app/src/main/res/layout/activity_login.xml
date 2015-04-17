@@ -32,9 +32,14 @@
         android:layout_marginTop="100dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/usernameLabel"/>
+            style="@style/LoginLabels"
+            android:id="@+id/usernameLabel"
+            android:text="@string/username"/>
 
+        <TextView
+            style="@style/LoginLabels"
+            android:id="@+id/passwordLabel"
+            android:text="@string/password"
+            android:layout_below="@+id/usernameLabel"/>
         </LinearLayout>
 </RelativeLayout>
