@@ -6,21 +6,21 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class LoginActivity extends ActionBarActivity {
+public class MenuActivity extends ActionBarActivity {
+    private String userName;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String title = "MU Classifieds";
-        this.setTitle(title);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_menu);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login, menu);
+        getMenuInflater().inflate(R.menu.menu_menu, menu);
         return true;
     }
 

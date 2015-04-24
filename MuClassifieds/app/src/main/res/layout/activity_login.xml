@@ -28,18 +28,47 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/usernameLayout"
         android:layout_below="@+id/subtitle"
         android:layout_marginTop="100dp">
 
         <TextView
             style="@style/LoginLabels"
-            android:id="@+id/usernameLabel"
             android:text="@string/username"/>
+
+        <EditText
+            style="@style/Field"
+            android:layout_marginLeft="10dp"
+            android:hint="Enter Username"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordLabel"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <TextView
             style="@style/LoginLabels"
-            android:id="@+id/passwordLabel"
-            android:text="@string/password"
-            android:layout_below="@+id/usernameLabel"/>
-        </LinearLayout>
+            android:text="@string/password"/>
+
+        <EditText
+            style="@style/Field"
+            android:layout_marginLeft="10dp"
+            android:hint="Enter Password"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton"
+        android:layout_below="@+id/passwordLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="LOGIN"
+        android:onClick="loginButtonOnClick"/>
 </RelativeLayout>
