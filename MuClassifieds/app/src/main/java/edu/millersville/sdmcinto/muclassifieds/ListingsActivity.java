@@ -1,26 +1,29 @@
 package edu.millersville.sdmcinto.muclassifieds;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
+import android.widget.ListAdapter;
+import edu.millersville.sdmcinto.utils.SQLiteDBUtility;
+import edu.millersville.sdmcinto.utils.ListingItem;
 
-public class MenuActivity extends LoginActivity {
-    private String userName;
-
+public class ListingsActivity extends ListActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_listings);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_menu, menu);
+        getMenuInflater().inflate(R.menu.menu_listings, menu);
         return true;
     }
 

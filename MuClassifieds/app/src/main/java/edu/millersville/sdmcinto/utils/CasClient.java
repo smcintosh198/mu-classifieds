@@ -1,4 +1,4 @@
-package edu.millersville.sdmcinto.muclassifieds;
+package edu.millersville.sdmcinto.utils;
 
 /**
  * Created by sdmcinto on 4/21/2015.

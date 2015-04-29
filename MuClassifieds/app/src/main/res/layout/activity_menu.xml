@@ -7,6 +7,74 @@
     android:background="@android:color/background_dark"
     tools:context="edu.millersville.sdmcinto.muclassifieds.MenuActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameTitle"
+        android:text=" Username "
+        android:textSize="23dp"
+        android:textColor="@android:color/white"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listingsButton"
+            android:onClick="listingsButtonOnClick"
+            android:layout_marginTop="50dp"
+            android:width="165dp"
+            android:height="260dp"
+            android:background="@android:color/darker_gray"
+            android:alpha="0.2"
+            android:text="LISTINGS"
+            android:textSize="30dp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/vertline"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageVertLine" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myListingsButton"
+            android:onClick="myListingsButtonOnClick"
+            android:layout_alignRight="@id/imageVertLine"
+            android:layout_marginTop="34dp"
+            android:width="170dp"
+            android:height="260dp"
+            android:background="@android:color/darker_gray"
+            android:alpha="0.20"
+            android:text="MY LISTINGS"
+            android:textSize="30dp"
+            android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageHorizLine"
+        android:layout_marginTop="315dp"
+        android:background="@drawable/line"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addListingsButton"
+        android:onClick="addListingsButtonOnClick"
+        android:layout_below="@id/imageHorizLine"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:height="150dp"
+        android:alpha="0.20"
+        android:text="ADD LISTING"
+        android:textSize="40dp"/>
 
 </RelativeLayout>
