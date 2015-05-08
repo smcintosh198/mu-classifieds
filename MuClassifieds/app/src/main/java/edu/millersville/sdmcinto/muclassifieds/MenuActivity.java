@@ -1,20 +1,65 @@
 package edu.millersville.sdmcinto.muclassifieds;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
 
 
 public class MenuActivity extends LoginActivity {
-    private String userName;
+    private Button listingsButton;
+    private Button myListingsButton;
+    private Button addListingButton;
+    private TextView userNameLabel;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        initGui();
     }
+
+    private void initGui () {
+        userNameLabel = (TextView) findViewById(R.id.usernameTitle);
+        if (!username.isEmpty()) {
+            userNameLabel.setText(username);
+        } else {
+            System.out.println("username is null");
+        }
+
+        listingsButton = (Button) findViewById(R.id.listingsButton);
+        listingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), ListingsActivity.class);
+                startActivity(i);
+            }
+        });
+
+        myListingsButton = (Button) findViewById(R.id.myListingsButton);
+        myListingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Intent i = new Intent (v.getContext(), );
+                //startActivity(i);
+            }
+        });
+
+        addListingButton = (Button)findViewById(R.id.addListingsButton);
+        addListingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent (v.getContext(), AddListingActivity.class);
+                startActivity(i);
+            }
+        });
+    }
+
 
 
     @Override

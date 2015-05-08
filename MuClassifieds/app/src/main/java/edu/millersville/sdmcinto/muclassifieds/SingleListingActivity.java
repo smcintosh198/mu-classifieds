@@ -1,44 +1,24 @@
 package edu.millersville.sdmcinto.muclassifieds;
 
-
-import android.database.Cursor;
+import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 
-public class ListingsActivity extends MenuActivity {
-    private ListView listView;
-
+public class SingleListingActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listings);
-        initGui();
+        setContentView(R.layout.activity_single_listing);
     }
 
-    private void initGui() {
-        listView = (ListView) findViewById(R.id.listingsView);
-        listView.setAdapter(dAdapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Cursor cursor = (Cursor) listView.getItemAtPosition(position);
-
-            }
-        });
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_listings, menu);
+        getMenuInflater().inflate(R.menu.menu_single_listing, menu);
         return true;
     }
 

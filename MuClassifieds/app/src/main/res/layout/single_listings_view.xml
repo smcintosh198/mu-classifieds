@@ -6,12 +6,12 @@
     android:padding="6dip" >
 
     <TextView
-        android:id="@+id/labelTitle"
+        android:id="@+id/labelTrack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="Title: "
+        android:text="Track: "
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -26,8 +26,8 @@
         android:id="@+id/labelPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/labelTitle"
-        android:text="Price: "
+        android:layout_below="@+id/labelTrack"
+        android:text="Name: "
         android:textAppearance="?android:attr/textAppearanceMedium" />
     <TextView
         android:id="@+id/price"
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/labelPrice"
         android:layout_below="@+id/labelPrice"
-        android:text="Category: "
+        android:text="Album: "
         android:textAppearance="?android:attr/textAppearanceMedium" />
     <TextView
         android:id="@+id/category"
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/labelCategory"
         android:layout_below="@+id/labelCategory"
-        android:text="Description: "
+        android:text="Media: "
         android:textAppearance="?android:attr/textAppearanceMedium" />
     <TextView
         android:id="@+id/description"
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/labelDescription"
         android:layout_below="@+id/labelDescription"
-        android:text="Posted: "
+        android:text="Genre: "
         android:textAppearance="?android:attr/textAppearanceMedium" />
     <TextView
         android:id="@+id/posted"
@@ -92,7 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/labelPosted"
         android:layout_below="@+id/labelPosted"
-        android:text="Expires: "
+        android:text="Composer: "
         android:textAppearance="?android:attr/textAppearanceMedium" />
     <TextView
         android:id="@+id/expires"
@@ -108,7 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/labelExpires"
         android:layout_below="@+id/labelExpires"
-        android:text="Email: "
+        android:text="Milliseconds: "
         android:textAppearance="?android:attr/textAppearanceMedium" />
     <TextView
         android:id="@+id/email"
@@ -117,6 +117,40 @@
         android:layout_alignBaseline="@+id/labelEmail"
         android:layout_alignBottom="@+id/labelEmail"
         android:layout_toRightOf="@+id/labelEmail"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/labelBytes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelEmail"
+        android:layout_below="@+id/labelEmail"
+        android:text="Bytes: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/bytes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelBytes"
+        android:layout_alignBottom="@+id/labelBytes"
+        android:layout_toRightOf="@+id/labelBytes"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/labelPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelBytes"
+        android:layout_below="@+id/labelBytes"
+        android:text="Price: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelPrice"
+        android:layout_alignBottom="@+id/labelPrice"
+        android:layout_toRightOf="@+id/labelPrice"
         android:text="TextView" />
 
 </RelativeLayout>

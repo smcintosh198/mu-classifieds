@@ -11,5 +11,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_listings">ListingsActivity</string>
     <string name="some_text">Listings View</string>
+    <string name="title_activity_single_listing">SingleListingActivity</string>
+    <string name="title_activity_add_listing">AddListingActivity</string>
 
 </resources>
